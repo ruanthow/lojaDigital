@@ -1,0 +1,136 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 4rem;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.452);
+}
+
+.navbar-Menu {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--orange);
+  font-family: 'Arvo', sans-serif;
+}
+
+.navbar-Menu .navbar-toogle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-Menu .navbar-toogle div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-Menu .navbar-toogle div span {
+  background: var(--white);
+  width: 20px;
+  height: 2px;
+  margin: 2px;
+}
+
+.navbar-Menu .navbar-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.navbar-Menu .navbar-logo img {
+  height: 60px;
+  width: 60px;
+}
+
+.navbar-Menu .navbar-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.navbar-Menu .navbar-search input {
+  height: 2.5rem;
+  width: 18rem;
+  border-radius: 5px;
+  padding: 0 16px;
+  background: #fff;
+  border: 1px solid #a8a8b3;
+}
+
+.navbar-Menu .navbar-search img {
+  position: absolute;
+  top: 40%;
+  left: 90%;
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+}
+
+.navbar-Menu .navbar-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.navbar-Menu .navbar-account img {
+  height: 40px;
+  width: 40px;
+}
+
+.navbar-Menu .navbar-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-Menu .navbar-cart img {
+  height: 30px;
+  width: 30px;
+}
+/*# sourceMappingURL=styles.css.map */
