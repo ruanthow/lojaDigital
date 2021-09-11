@@ -1,9 +1,151 @@
 .container-Home{
-    height: 3000px;
     background: url(../../assets/img/bg-page.jpg);
-    background-size: 100%;
+    background-size: 120%;
 }
 
-main{
+.home-onFire{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    grid-template-columns: 2fr 1fr;
+
+
+    margin: 2rem 13rem;
+}
+
+.home-card{
+    display: grid;
+    justify-items: flex-end;
+    align-items: center;
+
+    height: 580px;
+    width: 100%;
+    min-width: 350px;
+    background: url(../../assets/img/cyberpunk-poster.png);
+    background-position: center;
+    background-size: cover;
+
     
+    .home-button-buy{
+       
+            
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 320px 130px 0 0 ;
+        
+        border-radius: 5px;
+
+        height: 40px;
+        width: 160px;
+        
+        background: var(--orange);
+        color: var(--white);
+            
+        font-family: 'Arvo', sans-serif;
+        font-size: 12pt;
+
+        box-shadow: rgba(0, 0, 0, 0.678) 0 19px 38px, rgba(0, 0, 0, 0.781) 0px 15px 12px;
+
+        strong{
+            margin-left: 25px;
+        }
+
+        .home-subbutton{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--orange-dark);
+            
+            height: 40px;
+            width: 50px;
+
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            font-size: 15pt;
+        }
+        
+    }
+   
+}
+.home-card-secondary{
+    display: grid;
+    align-items: center;
+    height: 580px;
+    width: 100%;
+    min-width: 250px;
+    
+    background-color: var(--gray);
+
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    .home-game{
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        img{
+            height: 120px;
+            width: 120px;
+        }
+        strong{
+            font-size: 13pt;
+        }
+
+        &:hover{
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            background: var(--orange);
+        }
+    }
+}
+
+.home-news{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+
+    margin: 0 13rem;
+
+    .home-news-area-1{
+        max-width: 500px;
+        min-width: 320px;
+
+        img{
+           width: 100%;
+           
+        }
+    }
+    .home-news-area-2{
+       
+        max-width: 400px;
+        min-width: 320px;
+        padding: 6rem 2rem;
+
+        background: var(--orange);
+
+        border-radius: 5px;
+
+        strong{
+            font-family: 'Arvo', sans-serif;
+            font-size: 12pt;
+        }
+        p{  
+            font-size: 11pt;
+            font-family: 'Lato', sans-serif;
+            margin: 2rem 0;
+            color: var(--black);
+            font-weight: 600;
+        }
+        a{
+            color: var(--white);
+        }
+    }
 }

@@ -26,7 +26,7 @@ export function Navbar({color} : NavbarProps) {
                 <div className="side-menu-container">
                     <div className="side-menu-header">
                         <div className="side-menu-account">
-                            <img src="/user.svg" alt=""/>
+                            <img src="/user.svg" alt="icone de minha conta"/>
                             <button className="btn-account">Minha Conta</button>
                             <button 
                             className="btn-close"

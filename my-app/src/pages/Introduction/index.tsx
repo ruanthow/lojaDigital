@@ -18,7 +18,7 @@ export function Introduction() {
         <div className="container-Introduction">
             <Navbar color={'rgba(0, 0, 0, 0.452)'}/>
             <video width={x} height={y} autoPlay muted loop>
-                <source src="/trailer.mp4" type="video/mp4" />
+                <source src="/trailer.mp4" type="video/mp4"/>
             </video>
             <main>
                 <div className="img-Highlights">
