@@ -1,0 +1,11 @@
+
+.footer-container{
+    height: 200px;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+    background: var(--black);
+}

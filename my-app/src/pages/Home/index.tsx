@@ -1,12 +1,19 @@
 import React from 'react'
+import { useHistory } from 'react-router';
 import { Navbar } from '../../components/Navbar';
+import { Footer } from '../../components/Footer';
 
 import './styles.scss';
 
 import cyberpunkCapa from '../../assets/img/cyberpunk-capa.png';
 import consoles from '../../assets/img/consoles.png';
+import titles from '../../assets/img/titles.png';
+
+
 
 export function Home() {
+   const history = useHistory();
+
     return(
         <div className="container-Home">
             <Navbar color={'#020202'}/>
@@ -20,7 +27,9 @@ export function Home() {
                     </div>      
                </div>
                <div className="home-card-secondary">
-                    <div className="home-game">
+                    <div className="home-game" onClick={()=>{
+                        history.push('/store')
+                    }}>
                         <img src={cyberpunkCapa} alt="" />
                         <strong>CyberPunk 2077</strong>
                     </div>
@@ -47,10 +56,14 @@ export function Home() {
                         Next Generation
                     </strong>
                     <p>
-                    Conheça a geração mais poderosa dos consoles da atualidade <a href="">Playstation 5</a> e <a href="">Xbox Series</a> . Tenha as melhores experiências a 60 FPS em grandes franquias. Red Dead Redemption 2, Assassin's Creed Valhalla, CyberPunk 2077 e muito mais.
+                    Conheça a geração mais poderosa dos consoles da atualidade <a href="/">Playstation 5</a> e <a href="/">Xbox Series</a> . Tenha as melhores experiências em grandes franquias. Red Dead Redemption 2, Assassin's Creed Valhalla, CyberPunk 2077 e muito mais.
                     </p>
                 </div>
             </section>
+            <section className="home-titles">
+                <img src={titles} alt="Grandes titulos dos consoles" />
+            </section>
+            <Footer/>
         </div>
     )
 }
