@@ -4,8 +4,12 @@ import { Footer } from "../../components/Footer";
 import '../Store/styles.scss';
 
 import imgItem from '../../assets/img/cyberpunk-capa.png';
+import { useHistory } from "react-router-dom";
 
 export function Store(){
+
+    const history = useHistory();
+
     return(
         <div className="store-container">
             <Navbar color="#000"/>
@@ -41,7 +45,9 @@ export function Store(){
                 <div className="store-items">
                     <div className="store-item">
                         <div>
-                        <img src={imgItem} alt="" />
+                        <img src={imgItem} alt="" onClick={()=>{
+                            history.push('/productSelect')
+                        }}/>
                          <div className="store-item-infos">
                             <p className="item-name">Cyberpunk 2077</p>
                             <p className="item-price">R$ 59,90</p>
