@@ -1,0 +1,14 @@
+.button{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    input{
+        height: 2.5rem;
+        width: 8rem;
+        border-radius: 5px;
+        padding: 0 16px;
+        background: #fff;
+        border: 1px solid #a8a8b3
+    }
+}
