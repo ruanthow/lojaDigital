@@ -1,10 +1,10 @@
-import "../Button/styles.scss"
+import "../Input/styles.scss"
 
 
 
-export function Button() {
+export function Input() {
     return (
-        <div className="button">
+        <div className="input">
             <form>
                 <input
                     type="text"

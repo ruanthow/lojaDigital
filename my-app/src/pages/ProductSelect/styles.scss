@@ -44,14 +44,14 @@
     padding: 15px;
     border-radius: 5px;
     background: var(--white);
-    height: 975px;
 
     .product-name{
         color: var(--black);
         p{  
-            font-family: Arvo;
+            font-family: Arvo, sans-serif;
             font-size: 12pt;
             text-justify: distribute;
+            font-weight: 600;
            
         }
         div{
@@ -87,18 +87,75 @@
     }
     .product-area-buy{
         
-        padding: 20px 10px 0px 10px;
+        padding: 50px 10px 0px 10px;
         color: black;
         display: grid;
         align-items: center;
-        justify-items: center;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 50px;
     }
     .product-area-CEP{
         p{
             padding-bottom: 8px;
         }
         
+    }
+    .product-buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        
+        gap:50px;
+        
+
+        padding: 50px 10px 40px 10px;
+        
+        border-bottom: 1px solid rgba(53, 51, 51, 0.384);
+
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            height: 50px;
+            width: 180px;
+
+            font-size: 15pt;
+            font-family: Arvo;
+            font-weight: 600;
+
+            border: 0;
+            border-radius: 5px;
+
+            color: var(--white);
+
+        }
+
+        button:first-child{
+
+            background: linear-gradient(45deg, rgb(46, 187, 3) , rgb(109, 248, 74));        
+        }
+        button:last-child{
+            background: linear-gradient(45deg,#ff4e00 , #ec9f05);
+        }
+    }
+    .product-description{
+        &>strong{
+            display: flex;
+            align-items: center;
+            color: var(--orange);
+            
+        }
+        padding-top: 30px;
+        color: #000;
+
+        
+
+        .product-infos{
+            padding: 10px 10px;
+        }
+        .product-title{
+            padding-top: 8px;
+        }
     }
 }
